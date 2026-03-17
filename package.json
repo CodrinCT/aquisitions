@@ -1,0 +1,25 @@
+{
+  "name": "aquisitions",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodrinCT/aquisitions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodrinCT/aquisitions/issues"
+  },
+  "homepage": "https://github.com/CodrinCT/aquisitions#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
+  }
+}
