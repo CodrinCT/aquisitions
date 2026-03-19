@@ -8,5 +8,5 @@ export const formatValidationErrors = errors => {
       return `${path.join('.')} - ${message}`;
     });
   }
-  return json.stringify(errors);
+  return JSON.stringify(errors);
 };

@@ -24,7 +24,11 @@ export const comparePassword = async (password, hash) => {
 
 export const authenticateUser = async (email, password) => {
   try {
-    const [user] = await db.select().from(users).where(eq(users.email, email)).limit(1);
+    const [user] = await db
+      .select()
+      .from(users)
+      .where(eq(users.email, email))
+      .limit(1);
     if (!user) {
       throw new Error('Invalid credentials');
     }
@@ -45,7 +49,11 @@ export const authenticateUser = async (email, password) => {
 
 export const createUser = async ({ email, name, password, role = 'user' }) => {
   try {
-    const existingUser = await db.select().from(users).where(eq(users.email, email)).limit(1);
+    const existingUser = await db
+      .select()
+      .from(users)
+      .where(eq(users.email, email))
+      .limit(1);
     if (existingUser.length > 0) {
       throw new Error('User with this email already exists');
     }
