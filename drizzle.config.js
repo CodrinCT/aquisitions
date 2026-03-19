@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import { drizzle } from 'drizzle-orm/neon-serverless';
+// import { drizzle } from 'drizzle-orm/neon-serverless';
 // import { createPool } from '@neondatabase/serverless';
 
 export default {
@@ -9,8 +9,8 @@ export default {
   dbCredentials: {
     url: process.env.DATABASE_URL,
   },
-//   driver: async dbCredentials => {
-//     const pool = createPool(dbCredentials.url);
-//     return drizzle(pool);
-//   },
+  //   driver: async dbCredentials => {
+  //     const pool = createPool(dbCredentials.url);
+  //     return drizzle(pool);
+  //   },
 };
