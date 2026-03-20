@@ -1,4 +1,4 @@
-import 'dotenv/config';
+import './src/config/env.js';
 // import { drizzle } from 'drizzle-orm/neon-serverless';
 // import { createPool } from '@neondatabase/serverless';
 

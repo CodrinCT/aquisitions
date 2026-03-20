@@ -1,0 +1,29 @@
+# Dependencies — reinstalled inside the image via npm ci
+node_modules
+
+# Version control
+.git
+.gitignore
+
+# Environment files — injected at runtime via env_file / secrets
+.env
+.env.*
+
+# Neon Local branch metadata (git-branch-aware state)
+.neon_local
+
+# Runtime logs
+logs
+*.log
+
+# Build artefacts
+dist
+
+# Editor / tooling
+.prettierrc
+.prettierignore
+eslint.config.js
+
+# Documentation
+*.md
+DOCKER.md
